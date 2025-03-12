@@ -1,0 +1,465 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>高速プロトタイピングサービス | アイデアを4週間で形に</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@400;500;700&display=swap');
+        body {
+            font-family: 'Noto Sans JP', sans-serif;
+        }
+    </style>
+</head>
+<body class="bg-gray-50">
+    <!-- Header -->
+    <header class="fixed w-full bg-white/90 backdrop-blur-sm shadow-sm z-50">
+        <nav class="container mx-auto px-4 py-4 flex justify-between items-center">
+            <a href="#" class="text-2xl font-bold text-blue-600">QuickPrototype</a>
+            <div class="hidden md:flex space-x-6">
+                <a href="#features" class="hover:text-blue-600">特徴</a>
+                <a href="#process" class="hover:text-blue-600">進め方</a>
+                <a href="#pricing" class="hover:text-blue-600">料金</a>
+                <a href="#contact" class="bg-blue-600 text-white px-6 py-2 rounded-full hover:bg-blue-700">お問い合わせ</a>
+            </div>
+        </nav>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="pt-24 pb-16 md:pt-32 md:pb-24">
+        <div class="container mx-auto px-4">
+            <div class="max-w-4xl mx-auto text-center">
+                <h1 class="text-4xl md:text-5xl lg:text-6xl font-bold leading-tight mb-6">
+                    <span class="text-blue-600">4週間</span>で<br class="md:hidden">アイデアを<br class="hidden md:block">カタチにする
+                </h1>
+                <p class="text-xl md:text-2xl text-gray-600 mb-8">
+                    AIと最新技術で実現する高速プロトタイピングサービス<br>
+                    毎週動くプロトタイプを提供し、素早く市場価値を検証
+                </p>
+                <div class="flex flex-col md:flex-row justify-center gap-4">
+                    <a href="#contact" class="bg-blue-600 text-white px-8 py-4 rounded-full text-lg font-bold hover:bg-blue-700 transition-colors">
+                        無料相談を予約する
+                    </a>
+                    <a href="#process" class="bg-white text-blue-600 px-8 py-4 rounded-full text-lg font-bold border-2 border-blue-600 hover:bg-blue-50 transition-colors">
+                        サービスの詳細を見る
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Target Audience Section -->
+    <section class="py-16 bg-white" id="features">
+        <div class="container mx-auto px-4">
+            <h2 class="text-3xl md:text-4xl font-bold text-center mb-12">こんな方におすすめです</h2>
+            <div class="grid md:grid-cols-3 gap-8 max-w-6xl mx-auto">
+                <div class="bg-gray-50 p-6 rounded-xl">
+                    <div class="text-blue-600 text-4xl mb-4">
+                        <i class="fas fa-rocket"></i>
+                    </div>
+                    <h3 class="text-xl font-bold mb-4">スタートアップ創業者</h3>
+                    <ul class="space-y-3 text-gray-600">
+                        <li>• 開発リソースが限られている</li>
+                        <li>• 早期の市場検証（PMF）が必要</li>
+                        <li>• 少ない資本で成果を出したい</li>
+                    </ul>
+                </div>
+                <div class="bg-gray-50 p-6 rounded-xl">
+                    <div class="text-blue-600 text-4xl mb-4">
+                        <i class="fas fa-lightbulb"></i>
+                    </div>
+                    <h3 class="text-xl font-bold mb-4">新規事業開発チーム</h3>
+                    <ul class="space-y-3 text-gray-600">
+                        <li>• IT開発の進め方に不安がある</li>
+                        <li>• 要件定義に時間がかかりすぎる</li>
+                        <li>• 開発パートナーとの認識齟齬を減らしたい</li>
+                    </ul>
+                </div>
+                <div class="bg-gray-50 p-6 rounded-xl">
+                    <div class="text-blue-600 text-4xl mb-4">
+                        <i class="fas fa-sync-alt"></i>
+                    </div>
+                    <h3 class="text-xl font-bold mb-4">DX担当者</h3>
+                    <ul class="space-y-3 text-gray-600">
+                        <li>• 業務のデジタル化を推進したい</li>
+                        <li>• 現場との認識ギャップを減らしたい</li>
+                        <li>• 小規模開発で検証を重ねたい</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Problems Section -->
+    <section class="py-16 bg-gray-50">
+        <div class="container mx-auto px-4">
+            <h2 class="text-3xl md:text-4xl font-bold text-center mb-12">よくある課題と解決方法</h2>
+            <div class="grid md:grid-cols-2 gap-8 max-w-6xl mx-auto">
+                <div class="bg-white p-8 rounded-xl shadow-sm">
+                    <h3 class="text-xl font-bold mb-6 flex items-center">
+                        <span class="text-red-500 text-2xl mr-3"><i class="fas fa-exclamation-circle"></i></span>
+                        要件定義の失敗で手戻りが発生
+                    </h3>
+                    <p class="text-gray-600 mb-6">完成後に「これじゃない」と気づくことが多く、手戻りのコストが発生。ITに不慣れなチームと開発側の認識ギャップが原因です。</p>
+                    <div class="bg-blue-50 p-4 rounded-lg">
+                        <h4 class="text-blue-600 font-bold mb-2 flex items-center">
+                            <span class="mr-2"><i class="fas fa-check-circle"></i></span>
+                            解決方法
+                        </h4>
+                        <p>毎週動くプロトタイプを確認しながら、その場で方向修正が可能。実物を見ながら要件を固められます。</p>
+                    </div>
+                </div>
+                <div class="bg-white p-8 rounded-xl shadow-sm">
+                    <h3 class="text-xl font-bold mb-6 flex items-center">
+                        <span class="text-red-500 text-2xl mr-3"><i class="fas fa-exclamation-circle"></i></span>
+                        開発コストと時間が膨らむ
+                    </h3>
+                    <p class="text-gray-600 mb-6">開発が進むと仕様変更が困難になり、結果としてユーザーに刺さらないサービスになってしまいます。</p>
+                    <div class="bg-blue-50 p-4 rounded-lg">
+                        <h4 class="text-blue-600 font-bold mb-2 flex items-center">
+                            <span class="mr-2"><i class="fas fa-check-circle"></i></span>
+                            解決方法
+                        </h4>
+                        <p>AIと標準的な開発技術を活用し、4週間という短期間で本当に必要な機能を見極めます。</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Process Section -->
+    <section class="py-16 bg-white" id="process">
+        <div class="container mx-auto px-4">
+            <h2 class="text-3xl md:text-4xl font-bold text-center mb-12">4週間で「本当に欲しかったもの」を形に</h2>
+            <div class="max-w-5xl mx-auto">
+                <div class="grid md:grid-cols-4 gap-6">
+                    <div class="relative">
+                        <div class="bg-blue-600 text-white p-6 rounded-xl h-full">
+                            <div class="text-3xl font-bold mb-3">Week 1</div>
+                            <h3 class="font-bold mb-3">アイデアを形に</h3>
+                            <p class="text-sm text-blue-100">
+                                初回インタビューでアイデアを整理し、最初の「動く」プロトタイプを作成。すぐに触れる環境で、イメージを具体化します。
+                            </p>
+                            <div class="mt-4 text-sm">
+                                <span class="inline-block bg-blue-500 rounded px-2 py-1 mb-2">要件整理</span>
+                                <span class="inline-block bg-blue-500 rounded px-2 py-1 mb-2 ml-1">初期プロトタイプ</span>
+                            </div>
+                        </div>
+                        <div class="hidden md:block absolute -right-3 top-1/2 transform -translate-y-1/2 z-10 text-blue-600">
+                            <i class="fas fa-chevron-right"></i>
+                        </div>
+                    </div>
+                    <div class="relative">
+                        <div class="bg-blue-600 text-white p-6 rounded-xl h-full">
+                            <div class="text-3xl font-bold mb-3">Week 2</div>
+                            <h3 class="font-bold mb-3">使って気づく</h3>
+                            <p class="text-sm text-blue-100">
+                                実際に触ってみて初めて分かる改善点を即座に反映。より使いやすく、より目的に適したものへと進化させます。
+                            </p>
+                            <div class="mt-4 text-sm">
+                                <span class="inline-block bg-blue-500 rounded px-2 py-1 mb-2">機能拡張</span>
+                                <span class="inline-block bg-blue-500 rounded px-2 py-1 mb-2 ml-1">UI/UX改善</span>
+                            </div>
+                        </div>
+                        <div class="hidden md:block absolute -right-3 top-1/2 transform -translate-y-1/2 z-10 text-blue-600">
+                            <i class="fas fa-chevron-right"></i>
+                        </div>
+                    </div>
+                    <div class="relative">
+                        <div class="bg-blue-600 text-white p-6 rounded-xl h-full">
+                            <div class="text-3xl font-bold mb-3">Week 3</div>
+                            <h3 class="font-bold mb-3">実践的な検証</h3>
+                            <p class="text-sm text-blue-100">
+                                実際の利用シーンを想定した検証を重ね、現場の声を反映。本当に使えるサービスへと磨き上げます。
+                            </p>
+                            <div class="mt-4 text-sm">
+                                <span class="inline-block bg-blue-500 rounded px-2 py-1 mb-2">実地検証</span>
+                                <span class="inline-block bg-blue-500 rounded px-2 py-1 mb-2 ml-1">機能調整</span>
+                            </div>
+                        </div>
+                        <div class="hidden md:block absolute -right-3 top-1/2 transform -translate-y-1/2 z-10 text-blue-600">
+                            <i class="fas fa-chevron-right"></i>
+                        </div>
+                    </div>
+                    <div>
+                        <div class="bg-blue-600 text-white p-6 rounded-xl h-full">
+                            <div class="text-3xl font-bold mb-3">Week 4</div>
+                            <h3 class="font-bold mb-3">理想の形へ</h3>
+                            <p class="text-sm text-blue-100">
+                                最終フィードバックを反映し、本番環境での動作を確認。「これが欲しかった」と思える形で完成させます。
+                            </p>
+                            <div class="mt-4 text-sm">
+                                <span class="inline-block bg-blue-500 rounded px-2 py-1 mb-2">最終調整</span>
+                                <span class="inline-block bg-blue-500 rounded px-2 py-1 mb-2 ml-1">完成・納品</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="mt-12 bg-gray-50 p-6 rounded-xl">
+                    <h3 class="text-xl font-bold mb-4 text-center">なぜ4週間で実現できるのか？</h3>
+                    <div class="grid md:grid-cols-3 gap-6">
+                        <div class="text-center">
+                            <div class="text-blue-600 text-3xl mb-3">
+                                <i class="fas fa-bolt"></i>
+                            </div>
+                            <h4 class="font-bold mb-2">AIによる高速開発</h4>
+                            <p class="text-sm text-gray-600">最新のAI技術で開発速度を大幅に向上。アイデアから形にするまでの時間を短縮します。</p>
+                        </div>
+                        <div class="text-center">
+                            <div class="text-blue-600 text-3xl mb-3">
+                                <i class="fas fa-sync"></i>
+                            </div>
+                            <h4 class="font-bold mb-2">週次フィードバック</h4>
+                            <p class="text-sm text-gray-600">毎週の確認と修正で、イメージのズレを早期に解消。手戻りのリスクを最小限に。</p>
+                        </div>
+                        <div class="text-center">
+                            <div class="text-blue-600 text-3xl mb-3">
+                                <i class="fas fa-check-circle"></i>
+                            </div>
+                            <h4 class="font-bold mb-2">標準技術の活用</h4>
+                            <p class="text-sm text-gray-600">実績のある技術スタックで、安定性と拡張性を確保。本番稼働への移行もスムーズです。</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Pricing Section -->
+    <section class="py-16 bg-gray-50" id="pricing">
+        <div class="container mx-auto px-4">
+            <h2 class="text-3xl md:text-4xl font-bold text-center mb-12">料金プラン</h2>
+            <div class="max-w-4xl mx-auto">
+                <div class="bg-white p-8 rounded-xl shadow-sm">
+                    <div class="text-center mb-8">
+                        <div class="text-5xl font-bold text-blue-600 mb-4">¥1,500,000</div>
+                        <p class="text-gray-600">4週間 / 4プロトタイプ</p>
+                    </div>
+                    <div class="grid md:grid-cols-2 gap-8">
+                        <div>
+                            <h3 class="font-bold text-lg mb-4">含まれるもの</h3>
+                            <ul class="space-y-3">
+                                <li class="flex items-start">
+                                    <span class="text-blue-600 mr-2"><i class="fas fa-check"></i></span>
+                                    毎週の動くプロトタイプ提供
+                                </li>
+                                <li class="flex items-start">
+                                    <span class="text-blue-600 mr-2"><i class="fas fa-check"></i></span>
+                                    週次フィードバックミーティング
+                                </li>
+                                <li class="flex items-start">
+                                    <span class="text-blue-600 mr-2"><i class="fas fa-check"></i></span>
+                                    リアルタイムな方向修正
+                                </li>
+                                <li class="flex items-start">
+                                    <span class="text-blue-600 mr-2"><i class="fas fa-check"></i></span>
+                                    標準的なUIデザイン
+                                </li>
+                            </ul>
+                        </div>
+                        <div>
+                            <h3 class="font-bold text-lg mb-4">開発の特徴</h3>
+                            <ul class="space-y-3">
+                                <li class="flex items-start">
+                                    <span class="text-blue-600 mr-2"><i class="fas fa-check"></i></span>
+                                    AIによる高速開発
+                                </li>
+                                <li class="flex items-start">
+                                    <span class="text-blue-600 mr-2"><i class="fas fa-check"></i></span>
+                                    標準フレームワーク使用
+                                </li>
+                                <li class="flex items-start">
+                                    <span class="text-blue-600 mr-2"><i class="fas fa-check"></i></span>
+                                    MVPへの移行が容易
+                                </li>
+                                <li class="flex items-start">
+                                    <span class="text-blue-600 mr-2"><i class="fas fa-check"></i></span>
+                                    ベンダーロックインなし
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Form -->
+    <section class="py-16 bg-white" id="contact">
+        <div class="container mx-auto px-4">
+            <h2 class="text-3xl md:text-4xl font-bold text-center mb-12">お問い合わせ</h2>
+            <div class="max-w-2xl mx-auto">
+                <!-- Loading Overlay -->
+                <div id="loading-overlay" class="hidden fixed inset-0 bg-black bg-opacity-50 z-50 flex items-center justify-center">
+                    <div class="bg-white p-8 rounded-xl shadow-lg text-center">
+                        <div class="animate-spin rounded-full h-12 w-12 border-b-2 border-blue-600 mx-auto mb-4"></div>
+                        <p class="text-lg">送信中...</p>
+                    </div>
+                </div>
+
+                <!-- Success Message -->
+                <div id="success-message" class="hidden bg-white p-8 rounded-xl shadow-lg text-center">
+                    <div class="text-green-500 text-5xl mb-4">
+                        <i class="fas fa-check-circle"></i>
+                    </div>
+                    <h3 class="text-2xl font-bold mb-4">お問い合わせありがとうございます</h3>
+                    <p class="text-gray-600 mb-6">内容を確認次第、担当者よりご連絡させていただきます。</p>
+                    <button onclick="hideSuccessMessage()" class="bg-blue-600 text-white px-6 py-2 rounded-full hover:bg-blue-700 transition-colors">
+                        閉じる
+                    </button>
+                </div>
+
+                <form id="contact-form" class="space-y-6" action="https://docs.google.com/forms/u/0/d/e/1FAIpQLSem3sv945iyP901GwJGpedFZTBLPqRWyBkyuzsV83a6Fr3EWA/formResponse" method="POST" target="_blank">
+                    <div>
+                        <label for="company" class="block text-sm font-medium text-gray-700 mb-1">会社名</label>
+                        <input type="text" name="entry.1222305206" id="company"
+                            class="w-full px-4 py-2 border border-gray-300 rounded-lg focus:ring-2 focus:ring-blue-600 focus:border-transparent">
+                    </div>
+                    <div>
+                        <label for="name" class="block text-sm font-medium text-gray-700 mb-1">お名前<span class="text-red-500">*</span></label>
+                        <input type="text" name="entry.1728467882" id="name" required
+                            class="w-full px-4 py-2 border border-gray-300 rounded-lg focus:ring-2 focus:ring-blue-600 focus:border-transparent">
+                    </div>
+                    <div>
+                        <label for="email" class="block text-sm font-medium text-gray-700 mb-1">メールアドレス<span class="text-red-500">*</span></label>
+                        <input type="email" name="entry.1563041401" id="email" required
+                            class="w-full px-4 py-2 border border-gray-300 rounded-lg focus:ring-2 focus:ring-blue-600 focus:border-transparent">
+                    </div>
+                    <div>
+                        <label for="type" class="block text-sm font-medium text-gray-700 mb-1">種別<span class="text-red-500">*</span></label>
+                        <select name="entry.473807812" id="type" required
+                            class="w-full px-4 py-2 border border-gray-300 rounded-lg focus:ring-2 focus:ring-blue-600 focus:border-transparent">
+                            <option value="">選択してください</option>
+                            <option value="無料相談を予約">無料相談を予約</option>
+                            <option value="質問をしたい">質問をしたい</option>
+                            <option value="見積もりが欲しい">見積もりが欲しい</option>
+                        </select>
+                    </div>
+                    <div>
+                        <label for="message" class="block text-sm font-medium text-gray-700 mb-1">お問い合わせ内容<span class="text-red-500">*</span></label>
+                        <textarea name="entry.569583453" id="message" rows="4" required
+                            class="w-full px-4 py-2 border border-gray-300 rounded-lg focus:ring-2 focus:ring-blue-600 focus:border-transparent"></textarea>
+                    </div>
+                    <div class="text-center">
+                        <button type="submit"
+                            class="bg-blue-600 text-white px-8 py-4 rounded-full text-lg font-bold hover:bg-blue-700 transition-colors">
+                            送信する
+                        </button>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-gray-50 py-8">
+        <div class="container mx-auto px-4 text-center text-gray-600">
+            <p>&copy; 2024 QuickPrototype. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <!-- Mobile Menu Button -->
+    <button id="mobile-menu-button" class="md:hidden fixed bottom-6 right-6 bg-blue-600 text-white w-12 h-12 rounded-full shadow-lg flex items-center justify-center">
+        <i class="fas fa-bars"></i>
+    </button>
+
+    <!-- Mobile Menu -->
+    <div id="mobile-menu" class="hidden md:hidden fixed inset-0 bg-black bg-opacity-50 z-50">
+        <div class="bg-white h-auto w-full absolute bottom-0 rounded-t-2xl p-6">
+            <div class="flex justify-between items-center mb-6">
+                <h3 class="text-lg font-bold">メニュー</h3>
+                <button id="close-mobile-menu" class="text-gray-500">
+                    <i class="fas fa-times"></i>
+                </button>
+            </div>
+            <nav class="space-y-4">
+                <a href="#features" class="block py-2 hover:text-blue-600">特徴</a>
+                <a href="#process" class="block py-2 hover:text-blue-600">進め方</a>
+                <a href="#pricing" class="block py-2 hover:text-blue-600">料金</a>
+                <a href="#contact" class="block py-2 hover:text-blue-600">お問い合わせ</a>
+            </nav>
+        </div>
+    </div>
+
+    <script>
+        // Mobile menu functionality
+        document.getElementById('mobile-menu-button').addEventListener('click', function() {
+            document.getElementById('mobile-menu').classList.remove('hidden');
+        });
+
+        document.getElementById('close-mobile-menu').addEventListener('click', function() {
+            document.getElementById('mobile-menu').classList.add('hidden');
+        });
+
+        // Close mobile menu when clicking outside
+        document.getElementById('mobile-menu').addEventListener('click', function(e) {
+            if (e.target === this) {
+                this.classList.add('hidden');
+            }
+        });
+
+        // Close mobile menu when clicking on a link
+        document.querySelectorAll('#mobile-menu a').forEach(link => {
+            link.addEventListener('click', function() {
+                document.getElementById('mobile-menu').classList.add('hidden');
+            });
+        });
+
+        // Smooth scroll for anchor links
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                const target = document.querySelector(this.getAttribute('href'));
+                if (target) {
+                    window.scrollTo({
+                        top: target.offsetTop - 80,
+                        behavior: 'smooth'
+                    });
+                }
+            });
+        });
+
+        // Form submission handling
+        document.getElementById('contact-form').addEventListener('submit', async function(e) {
+            e.preventDefault();
+            
+            const form = e.target;
+            const loadingOverlay = document.getElementById('loading-overlay');
+            const successMessage = document.getElementById('success-message');
+            
+            // Show loading overlay
+            loadingOverlay.classList.remove('hidden');
+            
+            try {
+                const formData = new FormData(form);
+                const response = await fetch(form.action, {
+                    method: 'POST',
+                    body: formData,
+                    mode: 'no-cors' // Required for Google Forms
+                });
+                
+                // Hide loading overlay and show success message
+                loadingOverlay.classList.add('hidden');
+                form.classList.add('hidden');
+                successMessage.classList.remove('hidden');
+                
+                // Reset form
+                form.reset();
+                
+            } catch (error) {
+                console.error('Error:', error);
+                alert('送信に失敗しました。もう一度お試しください。');
+                loadingOverlay.classList.add('hidden');
+            }
+        });
+
+        function hideSuccessMessage() {
+            document.getElementById('success-message').classList.add('hidden');
+            document.getElementById('contact-form').classList.remove('hidden');
+        }
+    </script>
+</body>
+</html>
+
